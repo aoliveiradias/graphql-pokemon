@@ -1,0 +1,16 @@
+schema {
+   query: Query
+}
+
+type Pokemon {
+  id: ID!
+  nome: String!
+  idade: Int!
+  tipo: String
+}
+
+
+type Query {
+  obterPokemons: [Pokemon]!
+  obterPokemonPorId(id: Long) : Pokemon!
+}
