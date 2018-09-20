@@ -38,6 +38,8 @@ dependencies {
     compile("com.graphql-java:graphql-spring-boot-starter:${graphqlVersion}")
     compile("com.graphql-java:graphiql-spring-boot-starter:${graphqlVersion}")
     compile("com.graphql-java:graphql-java-tools:${graphqlToolsVersion}")
+    compile group: 'javax.xml.bind', name: 'jaxb-api', version: '2.2.4'
+
 
     compile('com.h2database:h2')
     runtime('mysql:mysql-connector-java')
